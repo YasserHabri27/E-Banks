@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue chez Habri & Allali Bank</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .credentials {
+            background: #f8f9fa;
+            border-left: 4px solid #1a237e;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+
+        .credential-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1a237e;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .bank-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="bank-logo">🏦</div>
+            <h1>Habri & Allali Bank</h1>
+            <p>Votre partenaire financier de confiance</p>
+        </div>
+
+        <div class="content">
+            <h2 style="color: #1a237e; margin-top: 0;">Bienvenue %CLIENT_NAME% !</h2>
+
+            <p>Cher(e) client(e),</p>
+
+            <p>Nous sommes ravis de vous accueillir chez <strong>Habri & Allali Bank</strong>.
+                Votre compte a été créé avec succès par notre équipe.</p>
+
+            <div class="credentials">
+                <h3 style="color: #1a237e; margin-top: 0;">📋 Vos identifiants de connexion</h3>
+
+                <div class="credential-item">
+                    <strong>👤 Identifiant (Email) :</strong><br>
+                    <code style="font-size: 16px; color: #1a237e;">%LOGIN%</code>
+                </div>
+
+                <div class="credential-item">
+                    <strong>🔒 Mot de passe temporaire :</strong><br>
+                    <code style="font-size: 18px; color: #d32f2f; letter-spacing: 2px;">%PASSWORD%</code>
+                </div>
+            </div>
+
+            <div class="warning">
+                <strong>⚠️ IMPORTANT :</strong>
+                <ul>
+                    <li>Ce mot de passe est temporaire et sécurisé</li>
+                    <li>Vous devez le changer lors de votre première connexion</li>
+                    <li>Ne partagez jamais vos identifiants</li>
+                    <li>Conservez cet email en lieu sûr</li>
+                </ul>
+            </div>
+
+            <p>
+                <a href="http://localhost:5173/login" class="button">
+                    🔗 Accéder à mon espace client
+                </a>
+            </p>
+
+            <p>Pour toute question, notre service client est à votre disposition :</p>
+            <p>
+                📧 <a href="mailto:contact@habriallalibank.ma">contact@habriallalibank.ma</a><br>
+                📞 <strong>+212 522 123 456</strong>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Habri & Allali Bank. Tous droits réservés.</p>
+            <p>Cet email est envoyé automatiquement, merci de ne pas y répondre.</p>
+            <p>Si vous n'êtes pas à l'origine de cette demande, veuillez ignorer cet email.</p>
+        </div>
+    </div>
+</body>
+
+</html>
